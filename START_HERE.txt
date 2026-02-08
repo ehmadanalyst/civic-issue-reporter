@@ -1,0 +1,124 @@
+# 🌟 Civic Issue Reporter & Analyzer
+
+## 🚀 Quick Start (Choose Your Option)
+
+### ⚡ Option 1: Instant Demo (No Setup Required)
+1. Open `civic-issue-reporter.html` in your browser
+2. Upload an image and add description
+3. Click "Analyze Issue"
+4. See results instantly (uses mock AI)
+
+**Perfect for:** Quick demos, testing the interface
+
+---
+
+### 🤖 Option 2: With Real AI (Gemini - Recommended)
+1. Install dependencies:
+   ```bash
+   pip install -r requirements_gemini.txt
+   ```
+
+2. Get free API key from: https://aistudio.google.com/apikey
+
+3. Set your key:
+   ```bash
+   export GOOGLE_API_KEY='your-key-here'
+   ```
+
+4. Run backend:
+   ```bash
+   python backend_api_gemini.py
+   ```
+
+5. Open `civic-issue-reporter.html` in browser
+
+**Perfect for:** Competition demos with real AI
+
+---
+
+### 🔧 Option 3: With Claude AI (Premium)
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Get API key from: https://console.anthropic.com/
+
+3. Set your key:
+   ```bash
+   export ANTHROPIC_API_KEY='your-key-here'
+   ```
+
+4. Run backend:
+   ```bash
+   python backend_api.py
+   ```
+
+5. Open `civic-issue-reporter.html` in browser
+
+**Perfect for:** Production deployment
+
+---
+
+## 📁 Project Structure
+
+```
+civic-issue-reporter/
+├── START_HERE.txt                    # This file
+├── civic-issue-reporter.html         # Main citizen app
+├── government-dashboard.html         # Government admin panel
+├── backend_api_gemini.py            # Backend with Gemini API ⭐
+├── backend_api.py                   # Backend with Claude API
+├── requirements_gemini.txt          # Dependencies for Gemini
+├── requirements.txt                 # Dependencies for Claude
+├── docs/
+│   ├── README.md                    # Full documentation
+│   ├── DEMO_GUIDE.md               # Presentation script
+│   └── GEMINI_SETUP.md             # Detailed Gemini setup
+└── images/
+    └── (place test images here)
+```
+
+---
+
+## 🎯 For Competition/Demo
+
+**Recommended Setup:**
+1. Use **Gemini API** (free, easy, fast)
+2. Read `docs/DEMO_GUIDE.md` for presentation tips
+3. Test with sample images before demo
+4. Have backup: HTML works standalone too
+
+---
+
+## 📚 Documentation
+
+- **Full Setup Guide:** `docs/README.md`
+- **Gemini Setup:** `docs/GEMINI_SETUP.md`
+- **Demo Script:** `docs/DEMO_GUIDE.md`
+
+---
+
+## 🆘 Need Help?
+
+1. Check `docs/GEMINI_SETUP.md` for troubleshooting
+2. Make sure API key is set correctly
+3. Verify dependencies are installed
+4. Test API health: http://localhost:5000/api/health
+
+---
+
+## ✨ Features
+
+✅ Multimodal AI (image + text analysis)
+✅ Auto-classification of civic issues
+✅ Severity and urgency scoring
+✅ Department routing
+✅ Safety warnings
+✅ JSON reports for government
+✅ Beautiful UI
+✅ Mobile responsive
+
+---
+
+**Built with ❤️ for better civic infrastructure**
