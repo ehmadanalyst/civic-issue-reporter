@@ -17,7 +17,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Initialize Gemini
-genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
+genai.configure(api_key=os.environ.get("AIzaSyDUAZRuGGlE6WJ4dkdC-xRWuPYtwcswsnk"))
 model = genai.GenerativeModel('gemini-2.0-flash-exp')
 
 ANALYSIS_PROMPT = """You are an AI assistant for a civic issue reporting system in Pakistan. 
